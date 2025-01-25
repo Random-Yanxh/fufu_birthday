@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+      .text {
+        font-family: 'Ma Shan Zheng', cursive;
+        fill: #882dac;  /* 初音主题色 */
+        font-size: 28px;
+        filter: drop-shadow(2px 2px 2px rgba(255,255,255,0.8)); /* 白色描边 */
+      }
+      .miku-gif {
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+    </style>
+  
+    <!-- 渐变背景 -->
+    <rect width="100%" height="100%" fill="url(#gradient)"/>
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#39C5BB;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#F6BEC8;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  
+    <!-- 动态GIF -->
+    <image class="miku-gif" 
+           href="https://raw.githubusercontent.com/Random-Yanxh/House_of_Random/main/8186fdb26637f41f49fb0b68eccf7b902515643a.gif@1052w_!web-dynamic.webp"
+           x="120" y="50" 
+           width="360" height="360"
+           preserveAspectRatio="xMidYMid meet"/>
+  
+    <!-- 祝福文字 -->
+    <text x="300" y="500" class="text" text-anchor="middle">
+      <tspan x="300" dy="0" style="font-size:36px">🎂 Fufu祝你生日快乐！</tspan>
+      <tspan x="300" dy="50">✨ 考试全过 | 初音护体</tspan>
+      <tspan x="300" dy="50">💌 诸事顺遂 | 所愿皆成</tspan>
+    </text>
+
+  </svg>
